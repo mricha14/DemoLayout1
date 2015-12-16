@@ -1,0 +1,388 @@
+/*===================
+Stylesheet: Layout1
+By: Marissa Richardson
+Created: 12/15/15
+====================*/
+
+/*=========
+Base Styles
+===========*/
+
+/*Background*/
+
+body {
+	background: #35404f;
+
+}
+
+.main-wrapper {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	
+}
+
+/*Header Styles*/
+
+header {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#logo {
+	background: #e45f56;
+	border-radius: 2.5%;
+	padding: 5px;
+	color: #fff;
+}
+
+#main-nav  li{
+	background: #6991ac;
+	color: #fff;
+	padding: 7px;
+	margin: 5px;
+	border-radius: 5%;
+}
+
+#main-nav {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: auto;
+	height: 40px;
+	margin-top: 20px;
+}
+
+/*Large Box Styles*/
+
+#feature-box {
+	background: #ebebeb;
+	height: 50%;
+	border-radius: 2%;
+}
+
+.sign-up {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: 25px;
+	height: 300px;
+}
+
+/*Styles within large box*/
+
+#feature-box h2 {
+	padding-top: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+/*Features List*/
+
+#features {
+	width: 47%;
+	padding-bottom: 2px;
+	color: #fff;
+}
+
+#features ul {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+	text-align: center;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;	
+}
+
+#features ul li {
+	background: #35404f;
+	padding-bottom: 10px;
+	padding-top: 2px;
+	margin-bottom: 10px;
+	border-radius: 4%;
+	height: 40px;
+	font-size: 20pt;
+}
+
+/*Large box footer styles*/
+
+#feature-box-footer {
+	font-size: 10pt;
+	text-align: center;
+}
+
+/*Sign-up form styles*/
+
+#sign-up-form {
+	background: #6991ac;
+	width: 47%;
+	margin-left: auto;
+	margin-right: 25px;
+	border-radius: 5%;
+}
+
+#sign-up-form fieldset {
+	border: none;
+	color: #fff;
+}
+
+legend {
+	padding-top: 10px;
+}
+
+#name,
+#email {
+	margin-bottom: 20px;
+	width: 60%;
+	background: #ebebeb;
+}
+
+#submit {
+	background: #e45f56;
+	color: #fff;
+}
+
+input {
+	border: none;
+	border-radius: 4%;
+}
+
+input[type=text],
+input[type=email] {
+	height: 40px;
+}
+
+input[type=submit] {
+	height: 50px;
+}
+
+/*=======================
+Lower half of page styles
+=========================*/
+
+/*Small box container styles*/
+
+#small-box-container {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	-moz-flex-grow: 1;
+	-o-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.small-box {
+	background: #bdbdbd;
+	height: 25%;
+	border-radius: 2.5%;
+	width: 49%;
+	margin: 10px 0;
+	
+}
+
+.small-box p {
+	font-size: 11pt;
+	background: #ebebeb;
+	width: 90%;
+	margin-left: 30px;
+	border-radius: 3%;
+	text-align: left;
+	padding-left: 5px;
+}
+
+/*Small box 1 styles*/
+
+#smbx1-header {
+	display: flex;
+}
+
+#smbx1-header h3 {
+	margin-left: auto;
+	margin-right: 30px;
+}
+
+#smbx1-header img {
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+/*Small box 2 styles*/
+
+#small-box2 {
+	margin-left: auto;
+}
+
+#smbx2-header {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+#smbx2-header img {
+	margin-top: 15px;
+}
+
+/*Page footer styles*/
+
+footer {
+	color: #fff;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}
+
+#bottom {
+	-webkit-align-self: flex-end;
+	-ms-align-self: flex-end;
+	-moz-align-self: flex-end;
+	-o-align-self: flex-end;
+	align-self: flex-end;
+}
+
+/*===============
+Media Queries
+================*/
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+	.small-box p {
+		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	
+	#small-box-container {
+		display: block;
+	}
+	.small-box {
+		width: 100%
+	}
+	.sign-up {
+		display: block;
+	}
+	#feature-box {
+		height: 710px;
+	}
+	#features,
+	#sign-up-form {
+		width: 90%;
+		margin: auto;
+		
+	}
+	#features {
+		margin-right: 55px;
+	}
+	#sign-up-form {
+		margin-right: 40px;
+	}
+	#feature-box-footer {
+		margin-top: 300px;
+	}
+	#submit {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		display: block;
+	}
+	
+	#main-nav li {
+		padding: 15px;
+		padding-top: 10px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#feature-box-footer {
+		visibility: hidden;
+	}
+	#feature-box {
+		height: 800px;
+	}
+	#smbx1-header img,
+	#smbx2-header img {
+		display: none;
+	}
+	#smbx1-header h3 {
+		margin-right: auto;
+	}
+	#smbx2-header h3 {
+		margin-left: 30px;
+	}
+	.small-box p {
+		margin: auto;
+		margin-left: 7px;
+		margin-bottom: 7px;
+	}
+	#features ul li {
+		padding-top: 10px;
+		padding-bottom: 17px;
+		margin-right: 12px;
+	}
+}
+
+@media screen and (max-width: 387px) {
+	#feature-box {
+		height: 875px;
+	}
+}
+
+/*===============
+Effects
+================*/
+
+#name:hover,
+#email:hover {
+	border: #f7be81;
+	border-style: solid;
+	border-width: 5px;
+}
+
+#features ul li:hover,
+#submit:hover,
+#main-nav li:hover,
+#logo:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
